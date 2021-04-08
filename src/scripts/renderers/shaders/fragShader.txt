@@ -1,0 +1,11 @@
+uniform float delta;
+uniform float r;
+uniform float g;
+uniform float b;
+
+void main() {
+    float red = r;
+    float green = g + sin(delta) * g;
+    float blue = b;
+	gl_FragColor = vec4(red, green, blue, 1.0);
+}
